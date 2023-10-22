@@ -1,0 +1,115 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap');
+
+/*ESTILOS HEADER*/
+
+.cabecera{
+    position: sticky;
+    top: 0px;
+    border-bottom: 1px solid rgb(51, 51, 51);
+    background-color: white;
+}
+
+.logoEncabezado{
+    width: 75px;
+}
+
+.listaNav{
+    list-style: none;
+    font-size: 1rem;
+    font-family: 'Cinzel Decorative', cursive;
+    text-align:center;
+    margin-bottom: 5px;
+}
+
+.listaNav li{
+    display: inline-block;
+}
+
+.linkNav{
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    padding-right: 10px;
+}
+
+/* ESTILOS BARRA DE NAVEGACION*/
+
+body{
+    margin: 15px;
+}
+
+/*ESTILOS TITULOS*/
+
+h1{
+    font-size: 1.25rem;
+    font-family: 'Cinzel Decorative', cursive;   
+    color: rgb(51, 51, 51);
+    padding-bottom: 5px;
+}
+
+h2{
+    font-size: 1rem;
+    font-family: 'Cinzel Decorative', cursive;   
+    color: rgb(51, 51, 51);
+    padding-bottom: 5px;  
+}
+h3{
+    font-size: 0.75rem;
+    font-family: 'Cinzel Decorative', cursive;   
+    color: rgb(51, 51, 51);
+    padding-bottom: 5px;      
+}
+
+/*ESTILOS PARRAFOS*/
+
+p{
+    font-size: 0.75rem;
+    font-family: 'Manrope', sans-serif;
+    color: rgb(51, 51, 51);  
+    padding-bottom: 5px;
+}
+
+.textoInicio{
+    text-align: center;
+}
+
+/*ESTILOS LISTAS*/
+.listasCurriculum{
+    font-size: 0.75rem;
+    font-family: 'Manrope', sans-serif;
+    color: rgb(51, 51, 51);  
+}
+
+/*ESTILOS DE IMAGENES*/
+.fotoDePerfil{
+    width: 400px;
+    height: 300px;
+    margin: 10px auto;
+}
+.fotosDeTarjetas{
+    width: 300px;
+    height: 200px;
+    margin: 10px auto;
+}
+
+/*ESTILOS TARJETAS*/
+.tarjetasProyectos{
+    margin:0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.tarjeta{
+    padding-top: 5px;
+    margin-left:10px;
+    display:inline-block;
+    width: 350px;
+    height:250px;
+}
+
+/*ESTILOS PIE DE PAGINA*/
+

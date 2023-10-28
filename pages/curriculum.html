@@ -6,79 +6,134 @@
         <title>Mi portfolio - Curriculum</title>
         <!-- Favicon -->
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/3a44ec6472.js" crossorigin="anonymous"></script>
     </head>
     <body> 
         <header class="cabecera">
-            <a href="../index.html">
-                <img class="logoEncabezado" src="../assets/img/logo_provisorio.png" alt="Logo">
-            </a>
-            <nav>
-                <ul class="listaNav" class="barraNavegacion">
-                    <li><a class="linkNav" href="../index.html">Inicio</a></li>
-                    <li><a class="linkNav" href="./curriculum.html">Curriculum</a></li>
-                    <li><a class="linkNav" href="./proyectos.html">Proyectos</a></li>
-                    <li><a class="linkNav" href="./sobre_mi.html">Sobre mi</a></li>
-                    <li><a class="linkNav" href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <!-- LOGO NAV BAR -->
+                  <a class="navbar-brand" href="../index.html">
+                    <img class="logoEncabezado" src="../assets/img/logo.png" alt="Logo">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <!-- SECCIONES NAVBAR -->
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                      <!-- SECCION INICIO -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                      </li>
+                      <!-- SECCION CURRICULUM -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="./curriculum.html">Curriculum</a>
+                      </li>
+                      <!-- SECCION PROYECTOS -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                      </li>
+                      <!-- DESPLEGABLE PROYECTOS-->
+                      <!-- TENGO DUDAS DE SI ESTO VA A FUNCIONAR YA QUE NO SE COMO LINKEARLO A UNA SECCIÓN EN UNA PÁGINA EN LUGAR DE A UNA PÁGINA -->
+                      <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./proyectos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Proyectos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="./proyectos.html">Panela</a></li>
+                          <li><a class="dropdown-item" href="./proyectos.html">Terracota</a></li>
+                          <li><a class="dropdown-item" href="./proyectos.html">Trendy App</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="./proyectos.html">Todos los proyectos</a></li>
+                        </ul>
+                      </li> -->
+                      <!-- SECCION SOBRE MI -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="./sobre_mi.html">Sobre mi</a>
+                      </li>
+                      <!-- SECCION CONTACTO -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
         <main>
-            <h1>Curriculum</h1>
-            <h2>Resumen</h2>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio ullam, velit temporibus adipisci nemo obcaecati nam expedita ad quibusdam, accusamus ea cum, architecto quod quisquam illum optio reiciendis dolorem!
-            </p>
-
-            <h2>Educación</h2>
-            <ul class="listasCurriculum">
-                <li>Contenido 1</li>
-                <li>Contenido 2</li>
-                <li>Contenido 3</li>
-            </ul>
-
-            <h2>Experiencia laboral</h2>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio ullam, velit temporibus adipisci nemo obcaecati nam expedita ad quibusdam, accusamus ea cum, architecto quod quisquam illum optio reiciendis dolorem!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio ullam, velit temporibus adipisci nemo obcaecati nam expedita ad quibusdam, accusamus ea cum, architecto quod quisquam illum optio reiciendis dolorem!
-            </p>
-
-            <h2>Experiencia académica</h2>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio ullam, velit temporibus adipisci nemo obcaecati nam expedita ad quibusdam, accusamus ea cum, architecto quod quisquam illum optio reiciendis dolorem!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio ullam, velit temporibus adipisci nemo obcaecati nam expedita ad quibusdam, accusamus ea cum, architecto quod quisquam illum optio reiciendis dolorem!
-            </p>
-
-            <h2>Habilidades</h2>
-            <h3>Soft</h3>
-            <ul class="listasCurriculum"> <!-- La idea es reemplazar las viñetas por estrellas -->
-                <li>Contenido 1</li>
-                <li>Contenido 2</li>
-                <li>Contenido 3</li>
-            </ul>
-            <h3>Hard</h3>
-            <ul class="listasCurriculum">
-                <li>Contenido 1</li>
-                <li>Contenido 2</li>
-                <li>Contenido 3</li>
-            </ul>
-        </main>
-        <footer>
-            <div>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./curriculum.html">Curriculum</a></li>
-                    <li><a href="./proyectos.html">Proyectos</a></li>
-                    <li><a href="./sobre_mi.html">Sobre mi</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
+            <section class="container mt-3 mb-3 fondoCurriculum p-2">
+                <h1>Curriculum</h1>
+                <!-- RESUMEN -->
+                <h2 class="titulosCurriculum">Resumen</h2>
+                <p>
+                    Graduada en Gestión de Recursos Humanos, con nueve años de experiencia en planeamiento y análisis de ventas.
+                    Con mucha curiosidad por el mundo del diseño, decidí cambiar el rumbo y enfocarme en aprender como aplicarlo en el mundo laboral.
+                </p>
+                <!-- EDUCACIÓN -->
+                <h2 class="titulosCurriculum">Educación</h2>
+                <ul class="listasCurriculum">
+                    <li>Lic. en Gestión de Recursos Humanos</li>
+                    <li>Social Media Marketing</li>
+                    <li>Fundamentos del Diseño Gráfico</li>
+                    <li>Photoshop e Illustrator</li>
+                    <li>After Effects</li>
+                    <li>Diseño UX/UI</li>
+                    <li>Diseño de Interfaces (UI)</li>
+                    <li>Desarrollo Web (HTML - CSS)</li>
                 </ul>
+                <!-- EXPERIENCIA LABORAL -->
+                <h2 class="titulosCurriculum">Experiencia laboral</h2>
+                <h3>Planeamiento y análisis de ventas</h3>
+                <p>
+                Mi carrera laboral siempre estuvo ligada a lo comercial, en marcas de la industria textil. Estableciendo objetivos de facturación, analizando ventas y stocks, coordinando la operación de los canales y puntos de venta y planificando acciones de marketing para alcanzar y superar los objetivos.
+                </p>
+                <!-- EXPERIENCIA ACADÉMICA -->
+                <h2 class="titulosCurriculum">Experiencia académica</h2>
+                <h3>Recursos Humanos</h3>
+                <p>
+                En mis años de estudiante en el área de Recursos Humanos aprendí como identificar las necesidades de un equipo de trabajo,analizar perfiles, entrevistar y buscar el recurso que más se amolde los requisitos de la búsqueda.
+                </p>
+                <h3>Diseño<h3>
+                <p>
+                En mis comienzos en el camino del diseño, aprendí sobre las bases del diseño y branding para, con estas herramientas, crear un manual de marca. Para llevar lo que aprendí al siguiente nivel, comencé mis estudios como diseñadora de experiencia del usuario dónde pude plasmar mis conocimientos diseñando una app de e-commerce. Para profundizar un poco más, hice una especialización en diseño de interfaces, dónde el resultado final fue el re diseño de un design system.
+                </p>
+                <!-- HABILISADES -->
+                <h2 class="titulosCurriculum">Habilidades</h2>
+                <h3>Soft</h3>
+                <ul class="listasCurriculum"> <!-- La idea es reemplazar las viñetas por estrellas -->
+                    <li>Creatividad</li>
+                    <li>Adaptabilidad</li>
+                    <li>Atención al detalle</li>
+                    <li>Organización</li>
+                    <li>Resolución de problemas</li>
+                </ul>
+                <h3>Hard</h3>
+                <ul class="listasCurriculum">
+                    <li>Diseño gráfico</li>
+                    <li>Acciones de marketing</li>
+                    <li>Prototipado</li>
+                    <li>Análisis</li>
+                </ul>
+            </section>
+        </main>
+        <footer class="pieDePagina">
+            <!-- REDES SOCIALES -->
+            <div class="text-center">
+              <div class="card-body">
+                <h2 class="card-title">Redes Sociales</h2>
+                <a target="_blank" href="https://www.linkedin.com/in/lucey-melanie/"><i class="fa-brands fa-square-behance fa-lg" style="color: #333333;"></i></a>
+                <h4>Behance</h4>
+                <a target="_blank" href="https://www.behance.net/lucey_melanie"><i class="fa-brands fa-linkedin fa-lg" style="color: #333333;"></i></a>
+                <h4>LinkedIn</h4>
+              </div>
             </div>
-            <div>
-                <a class="anclaFooter" target="_blank" href="https://www.linkedin.com/in/lucey-melanie/"><i class="fa-brands fa-square-behance"></i></a>
-                <a class="anclaFooter" target="_blank" href="https://www.behance.net/lucey_melanie"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </footer>          
+        </footer>
+        <!-- ETIQUETA JAVA SCRIPT -->   
+        <script src="../js/bootstrap.bundle.min.js"></script>       
     </body>
 </html>

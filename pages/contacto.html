@@ -6,28 +6,98 @@
         <title>Mi portfolio - Contacto</title>
         <!-- Favicon -->
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/3a44ec6472.js" crossorigin="anonymous"></script>
     </head>
     <body> 
         <header class="cabecera">
-            <a href="../index.html">
-                <img class="logoEncabezado" src="../assets/img/logo_provisorio.png" alt="Logo">
-            </a>
-            <nav>
-                <ul class="listaNav" class="barraNavegacion">
-                    <li><a class="linkNav" href="../index.html">Inicio</a></li>
-                    <li><a class="linkNav" href="./curriculum.html">Curriculum</a></li>
-                    <li><a class="linkNav" href="./proyectos.html">Proyectos</a></li>
-                    <li><a class="linkNav" href="./sobre_mi.html">Sobre mi</a></li>
-                    <li><a class="linkNav" href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <!-- LOGO NAV BAR -->
+                  <a class="navbar-brand" href="../index.html">
+                    <img class="logoEncabezado" src="../assets/img/logo.png" alt="Logo">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <!-- SECCIONES NAVBAR -->
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                      <!-- SECCION INICIO -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                      </li>
+                      <!-- SECCION CURRICULUM -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="./curriculum.html">Curriculum</a>
+                      </li>
+                      <!-- SECCION PROYECTOS -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                      </li>
+                      <!-- DESPLEGABLE PROYECTOS-->
+                      <!-- TENGO DUDAS DE SI ESTO VA A FUNCIONAR YA QUE NO SE COMO LINKEARLO A UNA SECCIÓN EN UNA PÁGINA EN LUGAR DE A UNA PÁGINA -->
+                      <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./proyectos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Proyectos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="./proyectos.html">Panela</a></li>
+                          <li><a class="dropdown-item" href="./proyectos.html">Terracota</a></li>
+                          <li><a class="dropdown-item" href="./proyectos.html">Trendy App</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="./proyectos.html">Todos los proyectos</a></li>
+                        </ul>
+                      </li> -->
+                      <!-- SECCION SOBRE MI -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="./sobre_mi.html">Sobre mi</a>
+                      </li>
+                      <!-- SECCION CONTACTO -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
         <main>
-            <h1>Contacto</h1>
-            <section>
+            <div class="mx-auto formularioContacto mt-3 p-3">
+                <div class="container">
+                    <h1>¿Trabajamos juntos?</h1>
+                </div>
+                <div class="container mt-6">
+                    <form>
+                        <!-- NOMBRE -->
+                        <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre*</label>
+                        <input type="text" class="form-control form-control-sm imputFormulario" id="Ingrese su nombre" required>
+                        </div>
+                        <!-- TELÉFONO -->
+                        <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="number" class="form-control form-control-sm imputFormulario" id="Ingrese su teléfono">
+                        </div>
+                        <!-- EMAIL -->
+                        <div class="mb-3">
+                        <label for="email" class="form-label">E-mail*</label>
+                        <input type="email" class="form-control form-control-sm imputFormulario" id="Ingrese su e-mail" required>
+                        </div>
+                        <!-- MENSAJE -->
+                        <div class="mb-3">
+                        <label for="mensaje" class="form-label ">Mensaje</label>
+                        <textarea type="number" class="form-control imputFormulario cols="60" rows="5" "id="Dejame tu mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn botonContacto">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+            <!--<section>
                 <h2>¿Trabajamos juntos?</h2>
                 <form action="">
                     <label for="nombre">Nombre*</label>
@@ -50,22 +120,21 @@
                         <input type="reset" value="Limpiar">
                     </div>
                 </form>
-            </section>
+            </section> -->
         </main>
-        <footer>
-            <div>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./curriculum.html">Curriculum</a></li>
-                    <li><a href="./proyectos.html">Proyectos</a></li>
-                    <li><a href="./sobre_mi.html">Sobre mi</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
+        <footer class="pieDePagina mt-3">
+            <!-- REDES SOCIALES -->
+            <div class="text-center">
+              <div class="card-body">
+                <h2 class="card-title">Redes Sociales</h2>
+                <a target="_blank" href="https://www.linkedin.com/in/lucey-melanie/"><i class="fa-brands fa-square-behance fa-lg" style="color: #333333;"></i></a>
+                <h4>Behance</h4>
+                <a target="_blank" href="https://www.behance.net/lucey_melanie"><i class="fa-brands fa-linkedin fa-lg" style="color: #333333;"></i></a>
+                <h4>LinkedIn</h4>
+              </div>
             </div>
-            <div>
-                <a class="anclaFooter" target="_blank" href="https://www.linkedin.com/in/lucey-melanie/"><i class="fa-brands fa-square-behance"></i></a>
-                <a class="anclaFooter" target="_blank" href="https://www.behance.net/lucey_melanie"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </footer>       
+        </footer>
+        <!-- ETIQUETA JAVA SCRIPT -->   
+        <script src="../js/bootstrap.bundle.min.js"></script>    
     </body>
 </html>

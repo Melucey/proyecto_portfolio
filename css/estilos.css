@@ -1,115 +1,116 @@
 *{margin: 0;
-padding: 0;
-box-sizing: border-box;}
-
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap');
 
-/*ESTILOS HEADER*/
-
-.cabecera{
-    position: sticky;
-    top: 0px;
-    border-bottom: 1px solid rgb(51, 51, 51);
-    background-color: white;
-}
-
-.logoEncabezado{
-    width: 75px;
-}
-
-.listaNav{
-    list-style: none;
-    font-size: 1rem;
-    font-family: 'Cinzel Decorative', cursive;
-    text-align:center;
-    margin-bottom: 5px;
-}
-
-.listaNav li{
-    display: inline-block;
-}
-
-.linkNav{
-    text-decoration: none;
-    color: rgb(51, 51, 51);
-    padding-right: 10px;
-}
-
-/* ESTILOS BARRA DE NAVEGACION*/
-
+/*TIPOGRAFÍAS*/
 body{
-    margin: 15px;
-}
+    font-family: 'Manrope', sans-serif;
+    color: #333333;
+    }
+h1, h2, h3{
+    font-family: 'Cinzel Decorative', cursive;
+    line-height: normal;
+    }
 
-/*ESTILOS TITULOS*/
-
+/*ESTILOS TÍTULOS*/  
 h1{
     font-size: 1.25rem;
-    font-family: 'Cinzel Decorative', cursive;   
-    color: rgb(51, 51, 51);
-    padding-bottom: 5px;
-}
-
+    }
 h2{
     font-size: 1rem;
-    font-family: 'Cinzel Decorative', cursive;   
-    color: rgb(51, 51, 51);
-    padding-bottom: 5px;  
-}
+    }
 h3{
     font-size: 0.75rem;
-    font-family: 'Cinzel Decorative', cursive;   
-    color: rgb(51, 51, 51);
-    padding-bottom: 5px;      
-}
-
-/*ESTILOS PARRAFOS*/
-
-p{
+    }
+h4{
     font-size: 0.75rem;
+    }
+    
+/*ESTILOS PARRAFOS*/  
+p{
+    font-size: 1rem;
     font-family: 'Manrope', sans-serif;
     color: rgb(51, 51, 51);  
     padding-bottom: 5px;
-}
+    }
+.bgGris{
+    background-color: #f0f0f0;
+    }
 
-.textoInicio{
-    text-align: center;
-}
-
-/*ESTILOS LISTAS*/
-.listasCurriculum{
-    font-size: 0.75rem;
-    font-family: 'Manrope', sans-serif;
-    color: rgb(51, 51, 51);  
-}
-
-/*ESTILOS DE IMAGENES*/
-.fotoDePerfil{
-    width: 400px;
-    height: 300px;
-    margin: 10px auto;
-}
-.fotosDeTarjetas{
-    width: 300px;
-    height: 200px;
-    margin: 10px auto;
-}
-
-/*ESTILOS TARJETAS*/
-.tarjetasProyectos{
-    margin:0 auto;
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-.tarjeta{
-    padding-top: 5px;
-    margin-left:10px;
-    display:inline-block;
-    width: 350px;
-    height:250px;
+/*ESTILOS NAV BAR*/
+.logoEncabezado{
+    width: 50px;
+    }
+.cabecera{
+    border-bottom: 1px solid #333333;
+    background-color: white;
+    font-family: 'Cinzel Decorative', cursive;
+    }
+.navbar-light .navbar-nav .cabecera{
+    color: #333333;
+    }
+    
+/*ESTILOS BANNER*/
+@media screen and (width<=570px){
+    .altoBanner{
+        width: 100vh;
+        height: auto;
+    }
 }
 
 /*ESTILOS PIE DE PAGINA*/
+.pieDePagina{
+    border-top: 1px solid #333333;
+    background-color: #ffffff;
+    }
 
+.desplegable{
+    color: #333333;
+    background-color: #f0f0f0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.75rem;
+}
+.desplegableTexto{
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.75rem;
+    color: #333333;
+}
+.iconosRedesSociales{
+    color:#333333;
+    width: 5px;
+    height: 5px;
+}
+
+/* ESTILOS FORMULARIO CONTACTO */
+.botonContacto{
+    background-color: #333333;
+    color: #f0f0f0;
+}
+.botonContacto:hover{
+    background-color: #444444;
+    color: #f0f0f0;
+}
+.imputFormulario:focus {
+    background-color: #fff;
+    border-color: #333333;
+    outline: 0;
+    box-shadow: 0 0 0 0.15rem #33333325;
+  }
+.formularioContacto{
+    max-width: 60vh;
+    background-color: #f0f0f0;
+    border: 1px;
+    border-radius: 1%;
+}
+
+/* ESTILOS CURRICULUM */
+.fondoCurriculum{
+    background-color: #f0f0f0;
+}
+.titulosCurriculum{
+    background-color: #ffffff;
+}

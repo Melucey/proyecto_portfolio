@@ -6,67 +6,142 @@
         <title>Mi portfolio - Inicio</title>
         <!-- Favicon -->
         <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/estilos.css">
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/3a44ec6472.js" crossorigin="anonymous"></script>
     </head>
     <body> 
         <header class="cabecera">
-            <a href="index.html">
-                <img class="logoEncabezado" src="./assets/img/logo_provisorio.png" alt="Logo">
-            </a>
-            <nav>
-                <ul class="listaNav" class="barraNavegacion">
-                    <li><a class="linkNav" href="./index.html">Inicio</a></li>
-                    <li><a class="linkNav" href="./pages/curriculum.html">Curriculum</a></li>
-                    <li><a class="linkNav" href="./pages/proyectos.html">Proyectos</a></li>
-                    <li><a class="linkNav" href="./pages/sobre_mi.html">Sobre mi</a></li>
-                    <li><a class="linkNav" href="./pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <!-- LOGO NAV BAR -->
+                  <a class="navbar-brand" href="./index.html">
+                    <img class="logoEncabezado" src="./assets/img/logo.png" alt="Logo">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <!-- SECCIONES NAVBAR -->
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                      <!-- SECCION INICIO -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                      </li>
+                      <!-- SECCION CURRICULUM -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/curriculum.html">Curriculum</a>
+                      </li>
+                      <!-- SECCION PROYECTOS -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/proyectos.html">Proyectos</a>
+                      </li>
+                      <!-- DESPLEGABLE PROYECTOS-->
+                      <!-- TENGO DUDAS DE SI ESTO VA A FUNCIONAR YA QUE NO SE COMO LINKEARLO A UNA SECCIÓN EN UNA PÁGINA EN LUGAR DE A UNA PÁGINA -->
+                      <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./pages/proyectos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Proyectos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="./pages/proyectos.html">Panela</a></li>
+                          <li><a class="dropdown-item" href="./pages/proyectos.html">Terracota</a></li>
+                          <li><a class="dropdown-item" href="./pages/proyectos.html">Trendy App</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="./pages/proyectos.html">Todos los proyectos</a></li>
+                        </ul>
+                      </li> -->
+                      <!-- SECCION SOBRE MI -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/sobre_mi.html">Sobre mi</a>
+                      </li>
+                      <!-- SECCION CONTACTO -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
         <main>
-            <div>
-                <img class="fotoDePerfil" src="./assets/img/icono_imagen.png" alt="Foto de perfil">
+            <!-- BANNER PORTFOLIO -->
+            <div class="container mt-5">
+                <img src="./assets/img/banner_portfolio.png" class="col-12 col-xl-12 altoBanner img-fluid" alt="Banner Portfolio">
             </div>
-            <h1 class="textoInicio">Portfolio Melanie Lucey</h1>
-            <div>
-                <p class="textoInicio"> <!-- Descripción sobre mi (introductoria) -->
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis accusantium eveniet ad placeat est fugit architecto ipsum, recusandae id minima sint fuga sed quia libero possimus tempore provident velit illo!
+            <!-- DESCRIPCIÓN INTRODUCTORIA -->
+            <div class="mb-5">
+                <p class="container col text-center">
+                 <br> ¡Bienvenido a mi mundo de diseño centrado en el usuario! 
+                 <br>Soy una apasionada diseñadora UX/UI con un enfoque en crear experiencias digitales intuitivas y atractivas. A través de la combinación de investigación, diseño y desarrollo colaborativo, transformo ideas en interfaces pensadas para los usuarios.
+                 <br class="fst-italic">¡Te invito a conocer mis proyectos!
                 </p>
             </div>
-            <section class="tarjetasProyectos">
+        <!-- BANNER GALERÍA PROYECTOS -->
+        <div class="row row-cols-1 row-cols-md-3 g-3 mb-5 mx-1">
+            <!-- CARD PANELA -->
+            <a href="./pages/proyectos.html" class="text-decoration-none text-muted">
+              <div class="col">
+                <div class="card">
+                  <img src="./assets/img/portada_panela.png" class="card-img-top" alt="Vista previa proyecto Panela">
+                  <div class="card-body">
+                    <h2 class="text-center mb-0">Panela</h2>
+                  </div>
                 </div>
-                <h2>Algunos de mis proyectos</h2>
-                <div>
-                <div class="tarjeta">
-                    <h3>Descripción del proyecto 1</h3>
-                    <img class="fotosDeTarjetas" src="./assets/img/icono_imagen.png" alt="Proyecto1">
+              </div>
+            </a>
+            <!-- CARD TERRACOTA -->
+            <a href="./pages/proyectos.html" class="text-decoration-none text-muted">
+              <div class="col">
+                <div class="card">
+                  <img src="./assets/img/portada_terracota.png" class="card-img-top" alt="Vista previa proyecto Terracota">
+                  <div class="card-body">
+                    <h2 class="text-center mb-0">Terracota</h2>
+                  </div>
                 </div>
-                <div class="tarjeta">
-                    <h3>Descripción del proyecto 2</h3>
-                    <img class="fotosDeTarjetas" src="./assets/img/icono_imagen.png" alt="Proyecto2">
+              </div>
+            </a>
+            <!-- CARD TRENDY APP -->
+            <a href="./pages/proyectos.html" class="text-decoration-none text-muted">
+              <div class="col">
+                <div class="card">
+                  <img src="./assets/img/portada_trendy.png" class="card-img-top" alt="Vista previa proyecto Trendy App">
+                  <div class="card-body">
+                    <h2 class="text-center mb-0">Trendy App</h2>
+                  </div>
                 </div>
-                <div class="tarjeta">
-                    <h3>Descripción del proyecto 3</h3>
-                    <img class="fotosDeTarjetas" src="./assets/img/icono_imagen.png" alt="Proyecto3">
-                </div>
-            </section>
+              </div>
+            </a>
+          </div>
         </main>
-        <footer>
-            <div>
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/curriculum.html">Curriculum</a></li>
-                    <li><a href="./pages/proyectos.html">Proyectos</a></li>
-                    <li><a href="./pages/sobre_mi.html">Sobre mi</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                </ul>
+        <footer class="pieDePagina mt-5">
+            <!-- SECCIONES DROP-DOWN -->
+            <!-- <div class="container dropdown mt-3">
+              <h3> Secciones </h3>
+              <button class="btn dropdown-toggle desplegable" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Desplega
+              </button>
+              <ul class="dropdown-menu desplegableTexto" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="./index.html">Inicio</a></li>
+                <li><a class="dropdown-item" href="./pages/curriculum.html">Curriculum</a></li>
+                <li><a class="dropdown-item" href="./pages/proyectos.html">Proyectos</a></li>
+                <li><a class="dropdown-item" href="./pages/sobre_mi.html">Sobre mi</a></li>
+                <li><a class="dropdown-item" href="./pages/contacto.html">Contacto</a></li>
+              </ul>
+            </div> -->
+            <!-- REDES SOCIALES -->
+            <div class="text-center">
+              <div class="card-body">
+                <h2 class="card-title">Redes Sociales</h2>
+                <a target="_blank" href="https://www.linkedin.com/in/lucey-melanie/"><i class="fa-brands fa-square-behance fa-lg" style="color: #333333;"></i></a>
+                <h4>Behance</h4>
+                <a target="_blank" href="https://www.behance.net/lucey_melanie"><i class="fa-brands fa-linkedin fa-lg" style="color: #333333;"></i></a>
+                <h4>LinkedIn</h4>
+              </div>
             </div>
-            <div>
-                <a class="anclaFooter" target="_blank" href="https://www.linkedin.com/in/lucey-melanie/"><i class="fa-brands fa-square-behance"></i></a>
-                <a class="anclaFooter" target="_blank" href="https://www.behance.net/lucey_melanie"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </footer>       
+        </footer>
+        <!-- ETIQUETA JAVA SCRIPT -->   
+        <script src="./js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

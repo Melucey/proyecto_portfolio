@@ -1,0 +1,9 @@
+/* MIX IN (se usa con @include + nombre del mix in + valores que reemplazan en orden) */
+
+@mixin flexbox($direccion,$justificacion,$alineacion){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justificacion;
+    align-items: $alineacion;
+    background-color: grey;
+}

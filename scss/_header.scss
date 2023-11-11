@@ -1,11 +1,12 @@
-.logoEncabezado{
-    width: 50px;
-    }
-.cabecera{
+.cabecera {
+    position: sticky;
+    top: 0;
+    height: 5vh;
     border-bottom: 1px solid #333333;
     background-color: white;
     font-family: 'Cinzel Decorative', cursive;
+
+    a {
+        color: #333333;
     }
-.navbar-light .navbar-nav .cabecera{
-    color: #333333;
-    }
+}

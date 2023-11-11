@@ -4,35 +4,5 @@
 @import "reset.scss";
 @import "utilitarias.scss";
 @import "header.scss";
-@import "mainindex.scss";
+@import "main.scss";
 @import "footer.scss";
-
-/* ESTILOS FORMULARIO CONTACTO */
-.botonContacto{
-    background-color: #333333;
-    color: #f0f0f0;
-}
-.botonContacto:hover{
-    background-color: #444444;
-    color: #f0f0f0;
-}
-.imputFormulario:focus {
-    background-color: #fff;
-    border-color: #333333;
-    outline: 0;
-    box-shadow: 0 0 0 0.15rem #33333325;
-  }
-.formularioContacto{
-    max-width: 60vh;
-    background-color: #f0f0f0;
-    border: 1px;
-    border-radius: 1%;
-}
-
-/* ESTILOS CURRICULUM */
-.fondoCurriculum{
-    background-color: #f0f0f0;
-}
-.titulosCurriculum{
-    background-color: #ffffff;
-}

@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mi portfolio - Mis proyectos</title>
+        <meta name="description" content="Explora mi portafolio de proyectos. Descubre experiencias digitales únicas, interfaces intuitivas y soluciones creativas. Sumérgete en la diversidad de proyectos que reflejan mi enfoque apasionado por la estética y la funcionalidad en el diseño digital.">
+        <meta name="keywords" content="Portafolio de Proyectos, Diseño UX/UI, Experiencias Digitales, Interfaces Intuitivas, Soluciones Creativas, Proyectos Destacados, Diseño de Experiencia de Usuario, Interfaz de Usuario, Diseño Digital, Innovación en Diseño, Estética Funcional">
+        <title>Mis proyectos | Melanie Lucey</title>
         <!-- Favicon -->
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -14,12 +16,8 @@
     <body> 
         <header class="cabecera">
             <!-- NAVBAR -->
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
                 <div class="container-fluid">
-                  <!-- LOGO NAV BAR -->
-                  <a class="navbar-brand" href="../index.html">
-                    <img class="logoEncabezado" src="../assets/img/logo.png" alt="Logo">
-                  </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -38,20 +36,6 @@
                       <li class="nav-item">
                         <a class="nav-link" href="./proyectos.html">Proyectos</a>
                       </li>
-                      <!-- DESPLEGABLE PROYECTOS-->
-                      <!-- TENGO DUDAS DE SI ESTO VA A FUNCIONAR YA QUE NO SE COMO LINKEARLO A UNA SECCIÓN EN UNA PÁGINA EN LUGAR DE A UNA PÁGINA -->
-                      <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="./proyectos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Proyectos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="./proyectos.html">Panela</a></li>
-                          <li><a class="dropdown-item" href="./proyectos.html">Terracota</a></li>
-                          <li><a class="dropdown-item" href="./proyectos.html">Trendy App</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="./proyectos.html">Todos los proyectos</a></li>
-                        </ul>
-                      </li> -->
                       <!-- SECCION SOBRE MI -->
                       <li class="nav-item">
                         <a class="nav-link" href="./sobre_mi.html">Sobre mi</a>
@@ -66,25 +50,25 @@
               </nav>
         </header>
         <main>
-            <h1 class="container mt-3">Mis proyectos</h1>
+            <h1 class="container mt-3 mb-3">Te invito a conocer mis proyectos</h1>
             <!-- PROYECTO PANELA -->
-            <section>
-                <div class="container mb-3">
-                    <h2>Panela</h2>
+            <section id="panela">
+                <div class="container mb-0">
+                    <!--<h2>Panela</h2>-->
                     <img class="col-12 col-xl-12 img-fluid" src="../assets/img/proyecto_panela.png" alt="Proyecto Panela">
                 </div>
             </section>
             <!-- PROYECTO TERRACOTA -->
-            <section>
-                <div class="container mb-3">
-                    <h2>Terracota</h2>
+            <section id="terracota">
+                <div class="container mb-0">
+                    <!--<h2>Terracota</h2>-->
                     <img class="col-12 col-xl-12 img-fluid" src="../assets/img/proyecto_terracota.png" alt="Proyecto Terracota">
                 </div>
             </section>
             <!-- PROYECTO TRENDY APP -->
-            <section>
+            <section id="trendyApp">
                 <div class="container mb-3">
-                    <h2>TrendyApp</h2>
+                    <!--<h2>TrendyApp</h2>-->
                     <img class="col-12 col-xl-12 img-fluid" src="../assets/img/proyecto_trendy_app.png" alt="Proyecto TrendyApp">
                 </div>
             </section>
@@ -94,9 +78,9 @@
             <div class="text-center">
               <div class="card-body">
                 <h2 class="card-title">Redes Sociales</h2>
-                <a target="_blank" href="https://www.linkedin.com/in/lucey-melanie/"><i class="fa-brands fa-square-behance fa-lg" style="color: #333333;"></i></a>
+                <a class="iconosRedesSociales" target="_blank" href="https://www.linkedin.com/in/lucey-melanie/"><i class="fa-brands fa-square-behance fa-xl"></i></a>
                 <h4>Behance</h4>
-                <a target="_blank" href="https://www.behance.net/lucey_melanie"><i class="fa-brands fa-linkedin fa-lg" style="color: #333333;"></i></a>
+                <a class="iconosRedesSociales" target="_blank" href="https://www.behance.net/lucey_melanie"><i class="fa-brands fa-linkedin fa-xl"></i></a>
                 <h4>LinkedIn</h4>
               </div>
             </div>

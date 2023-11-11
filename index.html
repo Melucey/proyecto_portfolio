@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mi portfolio - Inicio</title>
+        <meta name="description" content="¡Hola, soy Melanie! Te invito a conocer mi mundo creativo de diseño UX/UI, donde comparto mis proyectos, experiencias y más. Transformando ideas en experiencias digitales funcionales. Conocé mi portfolio. ¡Bienvenido!">
+        <meta name="keywords" content="Diseño UX/UI, Experiencia de Usuario, Interfaces Intuitivas, Creatividad Digital, Portfolio de Diseño, Soluciones Innovadoras, Estética Funcional, Interacción Digital, Experiencias Cautivadoras, Diseño de Interfaz de Usuario, Usabilidad y Belleza, Proyectos Digitales, Narrativa Visual, Innovación en Diseño, [Nombre de la Diseñadora], Inspiración Creativa, Transformación de Ideas, Historias Digitales, Proyectos Impactantes, Diseño Experiencial">
+        <title>Melanie Lucey | Portfolio Diseño UX/UI</title>
         <!-- Favicon -->
         <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -14,12 +16,8 @@
     <body> 
         <header class="cabecera">
             <!-- NAVBAR -->
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
                 <div class="container-fluid">
-                  <!-- LOGO NAV BAR -->
-                  <a class="navbar-brand" href="./index.html">
-                    <img class="logoEncabezado" src="./assets/img/logo.png" alt="Logo">
-                  </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -38,20 +36,6 @@
                       <li class="nav-item">
                         <a class="nav-link" href="./pages/proyectos.html">Proyectos</a>
                       </li>
-                      <!-- DESPLEGABLE PROYECTOS-->
-                      <!-- TENGO DUDAS DE SI ESTO VA A FUNCIONAR YA QUE NO SE COMO LINKEARLO A UNA SECCIÓN EN UNA PÁGINA EN LUGAR DE A UNA PÁGINA -->
-                      <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="./pages/proyectos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Proyectos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="./pages/proyectos.html">Panela</a></li>
-                          <li><a class="dropdown-item" href="./pages/proyectos.html">Terracota</a></li>
-                          <li><a class="dropdown-item" href="./pages/proyectos.html">Trendy App</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="./pages/proyectos.html">Todos los proyectos</a></li>
-                        </ul>
-                      </li> -->
                       <!-- SECCION SOBRE MI -->
                       <li class="nav-item">
                         <a class="nav-link" href="./pages/sobre_mi.html">Sobre mi</a>
@@ -67,21 +51,24 @@
         </header>
         <main>
             <!-- BANNER PORTFOLIO -->
-            <div class="container mt-5">
-                <img src="./assets/img/banner_portfolio.png" class="col-12 col-xl-12 altoBanner img-fluid" alt="Banner Portfolio">
-            </div>
-            <!-- DESCRIPCIÓN INTRODUCTORIA -->
-            <div class="mb-5">
-                <p class="container col text-center">
-                 <br> ¡Bienvenido a mi mundo de diseño centrado en el usuario! 
-                 <br>Soy una apasionada diseñadora UX/UI con un enfoque en crear experiencias digitales intuitivas y atractivas. A través de la combinación de investigación, diseño y desarrollo colaborativo, transformo ideas en interfaces pensadas para los usuarios.
-                 <br class="fst-italic">¡Te invito a conocer mis proyectos!
-                </p>
-            </div>
+            <section class="containerBanner">
+              <div class="mt-5 mb-5 text-center imagenBanner">
+                  <img src="./assets/img/banner_index.svg" class="col-12 col-xl-7" alt="Banner Portfolio">
+              </div>
+              <!-- DESCRIPCIÓN INTRODUCTORIA -->
+              <div class="mb-5">
+                  <h1 class="col text-center mb-0 fs-5">Bienvenido a mi mundo de diseño centrado en el usuario</h1>
+                  <p class="col text-center">
+                  <span>Soy una apasionada diseñadora UX/UI con un enfoque en crear experiencias digitales intuitivas y atractivas.</span>
+                  <br><span>A través de la combinación de investigación, diseño y desarrollo colaborativo, transformo ideas en interfaces pensadas para los usuarios.</span>
+                  <br><span class="fw-bolder">¡Te invito a conocer mis proyectos!</span>
+                  </p>
+              </div>
+          </section>
         <!-- BANNER GALERÍA PROYECTOS -->
         <div class="row row-cols-1 row-cols-md-3 g-3 mb-5 mx-1">
             <!-- CARD PANELA -->
-            <a href="./pages/proyectos.html" class="text-decoration-none text-muted">
+            <a href="./pages/proyectos.html#panela" class="text-decoration-none text-muted hoverCards">
               <div class="col">
                 <div class="card">
                   <img src="./assets/img/portada_panela.png" class="card-img-top" alt="Vista previa proyecto Panela">
@@ -92,7 +79,7 @@
               </div>
             </a>
             <!-- CARD TERRACOTA -->
-            <a href="./pages/proyectos.html" class="text-decoration-none text-muted">
+            <a href="./pages/proyectos.html#terracota" class="text-decoration-none text-muted hoverCards">
               <div class="col">
                 <div class="card">
                   <img src="./assets/img/portada_terracota.png" class="card-img-top" alt="Vista previa proyecto Terracota">
@@ -103,7 +90,7 @@
               </div>
             </a>
             <!-- CARD TRENDY APP -->
-            <a href="./pages/proyectos.html" class="text-decoration-none text-muted">
+            <a href="./pages/proyectos.html#trendyApp" class="text-decoration-none text-muted hoverCards">
               <div class="col">
                 <div class="card">
                   <img src="./assets/img/portada_trendy.png" class="card-img-top" alt="Vista previa proyecto Trendy App">
@@ -133,11 +120,11 @@
             <!-- REDES SOCIALES -->
             <div class="text-center">
               <div class="card-body">
-                <h2 class="card-title">Redes Sociales</h2>
-                <a target="_blank" href="https://www.linkedin.com/in/lucey-melanie/"><i class="fa-brands fa-square-behance fa-lg" style="color: #333333;"></i></a>
-                <h4>Behance</h4>
-                <a target="_blank" href="https://www.behance.net/lucey_melanie"><i class="fa-brands fa-linkedin fa-lg" style="color: #333333;"></i></a>
-                <h4>LinkedIn</h4>
+                <h3 class="card-title">Redes Sociales</h3>
+                <div class="flex">
+                  <a class="iconosRedesSociales" target="_blank" href="https://www.linkedin.com/in/lucey-melanie/"><i class="fa-brands fa-square-behance fa-xl"></i></a>
+                  <a class="iconosRedesSociales" target="_blank" href="https://www.behance.net/lucey_melanie"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+               </div>
               </div>
             </div>
         </footer>

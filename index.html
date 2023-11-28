@@ -13,10 +13,10 @@
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/3a44ec6472.js" crossorigin="anonymous"></script>
     </head>
-    <body> 
+    <body class="d-flex flex-column min-vh-100"> 
         <header class="cabecera">
             <!-- NAVBAR -->
-            <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -53,10 +53,10 @@
             <!-- BANNER PORTFOLIO -->
             <section class="containerBanner">
               <div class="mt-5 mb-5 text-center imagenBanner">
-                  <img src="./assets/img/banner_index.svg" class="col-12 col-xl-7" alt="Banner Portfolio">
+                  <img src="./assets/img/banner_index.svg" class="col-12 col-md-9 col-xl-7" alt="Banner Portfolio">
               </div>
               <!-- DESCRIPCIÓN INTRODUCTORIA -->
-              <div class="mb-5">
+              <div class="mb-3">
                   <h1 class="col text-center mb-0 fs-5">Bienvenido a mi mundo de diseño centrado en el usuario</h1>
                   <p class="col text-center">
                   <span>Soy una apasionada diseñadora UX/UI con un enfoque en crear experiencias digitales intuitivas y atractivas.</span>
@@ -68,7 +68,7 @@
         <!-- BANNER GALERÍA PROYECTOS -->
         <div class="row row-cols-1 row-cols-md-3 g-3 mb-5 mx-1">
             <!-- CARD PANELA -->
-            <a href="./pages/proyectos.html#panela" class="text-decoration-none text-muted hoverCards">
+            <a href="./pages/proyectos.html#panela" class="text-decoration-none text-muted hoverAchicar">
               <div class="col">
                 <div class="card">
                   <img src="./assets/img/portada_panela.png" class="card-img-top" alt="Vista previa proyecto Panela">
@@ -79,7 +79,7 @@
               </div>
             </a>
             <!-- CARD TERRACOTA -->
-            <a href="./pages/proyectos.html#terracota" class="text-decoration-none text-muted hoverCards">
+            <a href="./pages/proyectos.html#terracota" class="text-decoration-none text-muted hoverAchicar">
               <div class="col">
                 <div class="card">
                   <img src="./assets/img/portada_terracota.png" class="card-img-top" alt="Vista previa proyecto Terracota">
@@ -90,7 +90,7 @@
               </div>
             </a>
             <!-- CARD TRENDY APP -->
-            <a href="./pages/proyectos.html#trendyApp" class="text-decoration-none text-muted hoverCards">
+            <a href="./pages/proyectos.html#trendyApp" class="text-decoration-none text-muted hoverAchicar">
               <div class="col">
                 <div class="card">
                   <img src="./assets/img/portada_trendy.png" class="card-img-top" alt="Vista previa proyecto Trendy App">
@@ -102,30 +102,28 @@
             </a>
           </div>
         </main>
-        <footer class="pieDePagina mt-5">
-            <!-- SECCIONES DROP-DOWN -->
-            <!-- <div class="container dropdown mt-3">
-              <h3> Secciones </h3>
-              <button class="btn dropdown-toggle desplegable" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                Desplega
-              </button>
-              <ul class="dropdown-menu desplegableTexto" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="./index.html">Inicio</a></li>
-                <li><a class="dropdown-item" href="./pages/curriculum.html">Curriculum</a></li>
-                <li><a class="dropdown-item" href="./pages/proyectos.html">Proyectos</a></li>
-                <li><a class="dropdown-item" href="./pages/sobre_mi.html">Sobre mi</a></li>
-                <li><a class="dropdown-item" href="./pages/contacto.html">Contacto</a></li>
-              </ul>
-            </div> -->
+        <footer class="pieDePagina">
             <!-- REDES SOCIALES -->
             <div class="text-center">
               <div class="card-body">
-                <h3 class="card-title">Redes Sociales</h3>
-                <div class="flex">
-                  <a class="iconosRedesSociales" target="_blank" href="https://www.linkedin.com/in/lucey-melanie/"><i class="fa-brands fa-square-behance fa-xl"></i></a>
-                  <a class="iconosRedesSociales" target="_blank" href="https://www.behance.net/lucey_melanie"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                <h3 class="card-title">Sigamos en contacto</h3>
+                <div class="flex iconosRedesSociales">
+                  <a class="iconosRedesSociales hoverAgrandar" target="_blank" href="https://www.linkedin.com/in/lucey-melanie/"><i class="behance fa-brands fa-square-behance fa-2xl"></i></a>
+                  <a class="iconosRedesSociales hoverAgrandar" target="_blank" href="https://www.behance.net/lucey_melanie"><i class="linkedin fa-brands fa-linkedin fa-2xl"></i></a>
+                  <a class="iconosRedesSociales hoverAgrandar" target="_blank" href="https://wa.me/34655407374"><i class="whatsapp fa-brands fa-square-whatsapp fa-2xl"></i></a>
+                  <a class="iconosRedesSociales hoverAgrandar" target="_blank" href="mailto:lucey_melanie@hotmail.com"><i class="mail fa-solid fa-square-envelope fa-2xl"></i></a>
                </div>
               </div>
+            </div>
+            <!-- SECCIONES DROP-DOWN -->
+            <div class="container text-center">
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-decoration-none text-muted" href="./index.html">Inicio</a></li>
+                <li class="list-inline-item"><a class="text-decoration-none text-muted" href="./pages/curriculum.html">Curriculum</a></li>
+                <li class="list-inline-item"><a class="text-decoration-none text-muted" href="./pages/proyectos.html">Proyectos</a></li>
+                <li class="list-inline-item"><a class="text-decoration-none text-muted" href="./pages/sobre_mi.html">Sobre mi</a></li>
+                <li class="list-inline-item"><a class="text-decoration-none text-muted" href="./pages/contacto.html">Contacto</a></li>
+              </ul>
             </div>
         </footer>
         <!-- ETIQUETA JAVA SCRIPT -->   

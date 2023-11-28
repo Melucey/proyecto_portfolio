@@ -1,15 +1,19 @@
 .bgGris{
-    background-color: #f0f0f0;
+    background-color: $color-secundario;
     }
 
 .textoNegrita{
     color: #5e5e5e;
 }
 
-.hoverCards:hover{
+.hoverAchicar:hover{
     transform: scale(0.98);
-    transition: transform 1s ease-in-out;
-    filter: drop-shadow(2px 2px 4px #cecece);
+    transition: transform 0.5s ease-in-out;
+}
+
+.hoverAgrandar:hover{
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in-out;
 }
 
 .flex{

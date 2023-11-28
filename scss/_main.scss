@@ -1,7 +1,9 @@
 /* ESTILOS BANNER INDEX */
 .containerBanner{
-    margin-top: 16vh;
-    margin-bottom: 16vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
 }
 .imagenBanner{
     animation-name: flotar;
@@ -12,33 +14,33 @@
 
 /* ESTILOS FORMULARIO CONTACTO */
 .botonContacto{
-    background-color: #333333;
-    color: #f0f0f0;
+    background-color: $color-principal;
+    color: $color-secundario;
 }
 .botonContacto:hover{
     background-color: #444444;
     color: #f0f0f0;
 }
 .imputFormulario:focus {
-    background-color: #fff;
-    border-color: #333333;
+    background-color: $color-fondo;
+    border-color: $color-principal;
     outline: 0;
     box-shadow: 0 0 0 0.15rem #33333325;
   }
 .formularioContacto{
     max-width: 60vh;
-    background-color: #f0f0f0;
+    background-color: $color-secundario;
     border: 1px;
     border-radius: 1%;
 }
+.containerLuna{
+    max-width: 40vh;
+}
 
 /* ESTILOS CURRICULUM */
-.fondoCurriculum{
-    background-color: #f0f0f0;
-}
 .titulosCurriculum{
     display: inline-block;
-    background-color: #ffffff;
+    background-color: $color-fondo;
 }
 .listasCurriculum{
     font-weight: 200;
@@ -51,4 +53,17 @@
     padding-left: 100px;
     padding-right: 100px;
 }
+@media screen and (max-width: 768px) {
+    .fotoSobreMi img {
+        display: none;
+    }
+}
 
+/*FONDO*/
+.fondoGeneral{
+    background-image: url('../assets/img/fondo_papel.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}

@@ -1,12 +1,15 @@
 .cabecera {
     position: sticky;
-    top: 0;
-    height: 5vh;
-    border-bottom: 1px solid #333333;
+    top: 5;
+    bottom: 5;
+    height: auto;
     background-color: white;
     font-family: 'Cinzel Decorative', cursive;
 
     a {
         color: #333333;
+        :hover{
+            text-underline-offset: 1px;
+        }
     }
 }

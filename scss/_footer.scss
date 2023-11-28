@@ -16,8 +16,21 @@
 }
 .iconosRedesSociales{
     color:#333333;
-    margin-right: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
     .iconosRedesSociales:hover{
-        color: #1c3782;
+        color: #f0f0f0;
+        .linkedin{
+            color: map-get($map: $redes, $key:linkedin )
+        }
+        .behance{
+            color: map-get($map: $redes, $key:behance )
+        }
+        .mail{
+            color: map-get($map: $redes, $key:mail )
+        }
+        .whatsapp{
+            color: map-get($map: $redes, $key:whatsapp )
+        }
     }
 }

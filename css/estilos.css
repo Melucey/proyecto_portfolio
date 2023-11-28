@@ -56,10 +56,14 @@ body {
   color: #5e5e5e;
 }
 
-.hoverCards:hover {
+.hoverAchicar:hover {
   transform: scale(0.98);
-  transition: transform 1s ease-in-out;
-  filter: drop-shadow(2px 2px 4px #cecece);
+  transition: transform 0.5s ease-in-out;
+}
+
+.hoverAgrandar:hover {
+  transform: scale(1.1);
+  transition: transform 0.1s ease-in-out;
 }
 
 .flex {
@@ -80,20 +84,25 @@ body {
 }
 .cabecera {
   position: sticky;
-  top: 0;
-  height: 5vh;
-  border-bottom: 1px solid #333333;
+  top: 5;
+  bottom: 5;
+  height: auto;
   background-color: white;
   font-family: "Cinzel Decorative", cursive;
 }
 .cabecera a {
   color: #333333;
 }
+.cabecera a :hover {
+  text-underline-offset: 1px;
+}
 
 /* ESTILOS BANNER INDEX */
 .containerBanner {
-  margin-top: 16vh;
-  margin-bottom: 16vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
 }
 
 .imagenBanner {
@@ -115,7 +124,7 @@ body {
 }
 
 .imputFormulario:focus {
-  background-color: #fff;
+  background-color: #ffffff;
   border-color: #333333;
   outline: 0;
   box-shadow: 0 0 0 0.15rem rgba(51, 51, 51, 0.1450980392);
@@ -128,11 +137,11 @@ body {
   border-radius: 1%;
 }
 
-/* ESTILOS CURRICULUM */
-.fondoCurriculum {
-  background-color: #f0f0f0;
+.containerLuna {
+  max-width: 40vh;
 }
 
+/* ESTILOS CURRICULUM */
 .titulosCurriculum {
   display: inline-block;
   background-color: #ffffff;
@@ -148,6 +157,20 @@ body {
 .parrafoSobremi {
   padding-left: 100px;
   padding-right: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .fotoSobreMi img {
+    display: none;
+  }
+}
+/*FONDO*/
+.fondoGeneral {
+  background-image: url("../assets/img/fondo_papel.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .pieDePagina {
@@ -170,10 +193,23 @@ body {
 
 .iconosRedesSociales {
   color: #333333;
-  margin-right: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 .iconosRedesSociales .iconosRedesSociales:hover {
-  color: #1c3782;
+  color: #f0f0f0;
+}
+.iconosRedesSociales .iconosRedesSociales:hover .linkedin {
+  color: #174e81;
+}
+.iconosRedesSociales .iconosRedesSociales:hover .behance {
+  color: #000000;
+}
+.iconosRedesSociales .iconosRedesSociales:hover .mail {
+  color: #6c5567;
+}
+.iconosRedesSociales .iconosRedesSociales:hover .whatsapp {
+  color: #0c573b;
 }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -16,7 +16,7 @@
     <body> 
         <header class="cabecera">
             <!-- NAVBAR -->
-            <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -49,31 +49,50 @@
                 </div>
               </nav>
         </header>
-        <main>
-            <div class="container pt-5 pb-5">
-            <h1>Algo sobre mi...</h1>
-              <section>
-                <p>Soy graduada en <span class="fw-bold textoNegrita">Gestión de Recursos Humanos</span> con una trayectoria de nueve años enfocada en el <span class="fw-bold textoNegrita">Planeamiento y análisis de ventas</span>, principalmente en el sector textil. A lo largo de mi carrera, me he destacado por establecer metas de facturación, analizar el desempeño de ventas y gestionar los niveles de inventario. He coordinado operaciones en diversos canales y puntos de venta, asegurando un flujo eficiente.</p>
-
-                <p>Sin embargo, mi trayectoria dio un giro cuando despertó mi interés por el <span class="fw-bold textoNegrita">diseño</span>. Decidí explorar este mundo y adquirir habilidades desde los <span class="fw-bold textoNegrita">fundamentos del diseño gráfico</span> hasta el desarrollo de interfaces y <span class="fw-bold textoNegrita">diseño UX/UI</span>. Mis estudios me llevaron a relizar manuales de marca, la creación de una aplicación de e-commerce y al rediseño de un design system, demostrando mi capacidad para aplicar creatividad y funcionalidad en el diseño.</p>
-                  
-                <p><span class="fw-bold textoNegrita">En resumen</span>, soy una profesional con formación en Recursos Humanos y una amplia experiencia en análisis de ventas, que ha diversificado sus habilidades al aventurarse en el mundo del diseño. </p>
-                
-                <p class="fw-bold textoNegrita">Mi enfoque es crear soluciones innovadoras y atractivas para el ámbito laboral, combinando creatividad y funcionalidad de manera efectiva.</p>
-              </section>
+        <main class="min-vh-100">
+            <div class="container mt-3 mb-3">
+              <div class="row p-4 bgGris">
+                <div class="col-12 col-md-9">
+                  <h1>Algo sobre mi...</h1>
+                  <section>
+                    <p>Soy graduada en <span class="fw-bold textoNegrita">Gestión de Recursos Humanos</span> con una trayectoria de nueve años enfocada en el <span class="fw-bold textoNegrita">Planeamiento y análisis de ventas</span>, principalmente en el sector textil. A lo largo de mi carrera, me he destacado por establecer metas de facturación, analizar el desempeño de ventas y gestionar los niveles de inventario. He coordinado operaciones en diversos canales y puntos de venta, asegurando un flujo eficiente.</p>
+    
+                    <p>Sin embargo, mi trayectoria dio un giro cuando despertó mi interés por el <span class="fw-bold textoNegrita">diseño</span>. Decidí explorar este mundo y adquirir habilidades desde los <span class="fw-bold textoNegrita">fundamentos del diseño gráfico</span> hasta el desarrollo de interfaces y <span class="fw-bold textoNegrita">diseño UX/UI</span>. Mis estudios me llevaron a relizar manuales de marca, la creación de una aplicación de e-commerce y al rediseño de un design system, demostrando mi capacidad para aplicar creatividad y funcionalidad en el diseño.</p>
+                      
+                    <p><span class="fw-bold textoNegrita">En resumen</span>, soy una profesional con formación en Recursos Humanos y una amplia experiencia en análisis de ventas, que ha diversificado sus habilidades al aventurarse en el mundo del diseño. </p>
+                    
+                    <p class="fw-bold textoNegrita">Mi enfoque es crear soluciones innovadoras y atractivas para el ámbito laboral, combinando creatividad y funcionalidad de manera efectiva.</p>
+                  </section>
+                </div>
+                <div class="col fotoSobreMi">
+                  <img src="../assets/img/foto_perfil.svg" alt="Foto mia">
+                </div>
+              </div>
         </main>
         <footer class="pieDePagina">
-            <!-- REDES SOCIALES -->
-            <div class="text-center">
-              <div class="card-body">
-                <h2 class="card-title">Redes Sociales</h2>
-                <a class="iconosRedesSociales" target="_blank" href="https://www.linkedin.com/in/lucey-melanie/"><i class="fa-brands fa-square-behance fa-xl"></i></a>
-                <h4>Behance</h4>
-                <a class="iconosRedesSociales" target="_blank" href="https://www.behance.net/lucey_melanie"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-                <h4>LinkedIn</h4>
-              </div>
+          <!-- REDES SOCIALES -->
+          <div class="text-center">
+            <div class="card-body">
+              <h3 class="card-title">Sigamos en contacto</h3>
+              <div class="flex iconosRedesSociales">
+                <a class="iconosRedesSociales hoverAgrandar" target="_blank" href="https://www.linkedin.com/in/lucey-melanie/"><i class="behance fa-brands fa-square-behance fa-2xl"></i></a>
+                <a class="iconosRedesSociales hoverAgrandar" target="_blank" href="https://www.behance.net/lucey_melanie"><i class="linkedin fa-brands fa-linkedin fa-2xl"></i></a>
+                <a class="iconosRedesSociales hoverAgrandar" target="_blank" href="https://wa.me/34655407374"><i class="whatsapp fa-brands fa-square-whatsapp fa-2xl"></i></a>
+                <a class="iconosRedesSociales hoverAgrandar" target="_blank" href="mailto:lucey_melanie@hotmail.com"><i class="mail fa-solid fa-square-envelope fa-2xl"></i></a>
+             </div>
             </div>
-        </footer>
+          </div>
+          <!-- SECCIONES DROP-DOWN -->
+          <div class="container text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="text-decoration-none text-muted" href="./index.html">Inicio</a></li>
+              <li class="list-inline-item"><a class="text-decoration-none text-muted" href="./pages/curriculum.html">Curriculum</a></li>
+              <li class="list-inline-item"><a class="text-decoration-none text-muted" href="./pages/proyectos.html">Proyectos</a></li>
+              <li class="list-inline-item"><a class="text-decoration-none text-muted" href="./pages/sobre_mi.html">Sobre mi</a></li>
+              <li class="list-inline-item"><a class="text-decoration-none text-muted" href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+      </footer>
         <!-- ETIQUETA JAVA SCRIPT -->   
         <script src="../js/bootstrap.bundle.min.js"></script>         
     </body>
